@@ -157,11 +157,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias aws-auth='~/dev/acro/infrastructure/bin/authenticate-aws-mfa.sh --name mdupree'
-alias ls='mrls'
-alias ols='ls'
+alias ols='mrls'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
@@ -170,10 +167,11 @@ alias p='pnpm'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
-alias zconf='v ~/.zshrc'
+alias zconf='nvim ~/.zshrc'
 alias zsrc='source ~/.zshrc'
 alias sizeof='du -sh'
 alias tma='tmux a || tmux new'
+alias tmh='tmux new-session \; split-window -v \; attach'
 
 # BEGIN SNIPPET: Platform.sh CLI configuration
 HOME=${HOME:-'/home/mdupree'}
