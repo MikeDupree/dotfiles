@@ -1,0 +1,14 @@
+
+/*
+
+!.gitignore
+!README.md
+
+!/custom_bin
+
+!/.local
+/.local/*
+!/.local/share
+/.local/share/*
+!/.local/share/icons
+!/.local/share/icons/*
