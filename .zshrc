@@ -63,6 +63,8 @@ export AVM="home/mdupree/.avm/bin"
 export AWS_CLI="/usr/local/bin/aws"
 export PATH="$AWS_CLI/bin:$AVM:$PATH"
 
+export CUSTOM_BIN="/home/$USER/custom_bin"
+export PATH="$CUSTOM_BIN:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -170,8 +172,8 @@ alias gc='git commit'
 alias zconf='nvim ~/.zshrc'
 alias zsrc='source ~/.zshrc'
 alias sizeof='du -sh'
-alias tma='tmux a || tmux new'
-alias tmh='tmux new-session \; split-window -v \; attach'
+alias tma='tmux a -t'
+alias tmn='create_session.sh'
 
 # BEGIN SNIPPET: Platform.sh CLI configuration
 HOME=${HOME:-'/home/mdupree'}
